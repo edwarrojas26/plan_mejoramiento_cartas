@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  background-image: url("../img/wallhaven-4ojz5p_1280x720.png");
+  font-family: "Secular One", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: solid red 1px; */
+}
+
+/* @media only screen and (min-width: 720px) { */
+.titulo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  border: solid 1px;
+}
+
+.area-tarjeta,
+.tarjeta,
+.cara {
+  cursor: pointer;
+  width: var(--w);
+  min-width: 100px;
+  height: var(--h);
+  margin: 1.5%;
+}
+.tarjeta {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: iniciar 1s;
+  height: 140px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: white;
+  border-radius: 5%;
+}
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+  font-size: 500%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  height: 140px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.superior {
+  background-color: white;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 110px;
+  margin: 2%;
+  border-color: white;
+  border-radius: 5%;
+  margin-left: 25%;
+}
+
+.carta img {
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: 99% 80%;
+  background-color: white;
+  background-position: center center;
+  border: solid black 1px;
+  margin: 2%;
+  height: 140px;
+  width: 110px;
+  border-color: white;
+  border-radius: 5%;
+  margin-left: 25%;
+}
+
+/*Boton*/
+.nuevo-juego {
+  cursor: pointer;
+  background: linear-gradient(orange, darkorange);
+  padding: 20px;
+  border-radius: 50px;
+  border: white 5px solid;
+  font-size: 130%;
+}
+
+@keyframes iniciar {
+  20%,
+  90% {
+    transform: rotateY(180deg);
+  }
+
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.contenedor {
+  border: dashed;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*}*/

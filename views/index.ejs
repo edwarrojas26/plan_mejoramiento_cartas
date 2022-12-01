@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fb993fc4c6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+
+    <title>Cartas</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="card">
+        <img class="card" src="img/Imagen1.png" alt="">
+        <h1>Refuerza tu memoria</h1>
+        <div class="boton">
+            <a href="/juego"><input type="submit" value="Jugar"></a>
+        </div>
+
+    </div>
+
+    <!-- modal -->
+    <div class="btn-group">
+        <button type="button" class="open-modal" data-open="modal1">
+            Instrucciones
+        </button>
+    </div>
+
+    <div class="modal" id="modal1" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <button class="close-modal" aria-label="close modal" data-close>
+                    ✕
+                </button>
+            </header>
+            <section class="modal-content">
+                <p><strong>Presiona X para cerrar</strong></p>
+                <h1>Instrucciones</h1>
+                <p>1. Dar clic en el botón Jugar</p>
+                <p>2. Llegaras a una vista donde encontraras unas tarjetas donde se encuentra algunas imágenes de
+                    lenguajes de programación </p>
+                <p>3. Se te dará un tiempo muy corto para que trates de memorizar la ubicación de las parejas</p>
+                <p>4. Seleccionas una tarjeta y tendrás que buscar la pareja, si coinciden se mantendrán a tu vista y
+                    deberás buscar las demás</p>
+                <h2>Buena suerte</h2>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- fin modal -->
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "sweetalert": "^2.1.2"
+  },
+  "name": "plan_mejoramiento_cartas",
+  "version": "1.0.0",
+  "description": "Plan de mejoramiento JS",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "micom": "node index",
+    "dev": "nodemon --watch ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwarrojas26/plan_mejoramiento_cartas.git"
+  },
+  "author": "Edwar Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwarrojas26/plan_mejoramiento_cartas/issues"
+  },
+  "homepage": "https://github.com/edwarrojas26/plan_mejoramiento_cartas#readme"
+}
